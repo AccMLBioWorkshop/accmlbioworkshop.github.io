@@ -1,39 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html data-bs-theme="light" lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>AccMLBio@ICML2024</title>
+    <meta name="twitter:description" content="ICML 2024 Workshop on Accessible and Efficient Foundation Models for Biological Discovery">
+    <meta name="twitter:title" content="AccML.Bio Workshop at ICML'24">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="https://accml.bio/assets/img/nci-cell.jpg">
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "WebSite",
+            "name": "AcccMLBio@ICML2024",
+            "url": "https://accml.bio"
+        }
+    </script>
+    <link rel="icon" type="image/jpeg" sizes="2000x2000" href="assets/img/nci-cell.jpg">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/Lato.css">
     <link rel="stylesheet" href="assets/css/Montserrat.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="assets/css/bs-theme-overrides.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/Footer-Basic.css">
     <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
+    <link rel="stylesheet" href="assets/css/Schedule-Table.css">
     <link rel="stylesheet" href="assets/css/Scroll-To-Top.css">
 </head>
 
 <body><a id="scroll-to-top" title="Scroll to top" href="#"><i class="fas fa-angle-up"></i></a>
     <div data-bss-parallax-bg="true" style="height: 400px;background-image: url(assets/img/nci-cell.jpg);background-position: center;background-size: cover;"></div>
     <header style="margin-top: 20px;margin-bottom: 11px;">
-        <nav class="navbar navbar-light navbar-expand-md navigation-clean" style="padding-top: 0px;padding-bottom: 0px;">
-            <div class="container"><a class="navbar-brand" href="#">AccML.Bio</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navcol-1" style="padding: 0;padding-top: 0;height: 40px;width: 900px;margin: 0px;margin-top: 0px;margin-bottom: -8px;">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item"></li>
-                        <li class="nav-item"><a class="nav-link" href="#about" style="font-family: Montserrat, sans-serif;">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#cfp">Call for Papers</a></li>
-                        <li class="nav-item"></li>
-                        <li class="nav-item"><a class="nav-link" href="#speakers">Invited Speakers</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#schedule">Schedule</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#pc">Program Committee</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#organizers">Organizers</a></li>
-                    </ul>
-                </div>
+        <div class="row">
+            <div class="col">
+                <nav class="navbar navbar-expand-md navigation-clean navbar-light" style="padding-top: 0px;padding-bottom: 0px;" data-bs-theme="dark">
+                    <div class="container"><a class="navbar-brand" href="#">AccML.Bio</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                        <div class="collapse navbar-collapse" id="navcol-1" style="padding: 0;padding-top: 0;height: 40px;width: 900px;margin: 0px;margin-top: 0px;margin-bottom: -8px;">
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item"></li>
+                                <li class="nav-item"><a class="nav-link" href="#about" style="font-family: Montserrat, sans-serif;">About</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#cfp">Call for Papers</a></li>
+                                <li class="nav-item"></li>
+                                <li class="nav-item"><a class="nav-link" href="#speakers">Invited Speakers</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#schedule">Schedule</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#pc">Program Committee</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Partners</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#organizers">Organizers</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
             </div>
-        </nav>
+        </div>
         <hr>
     </header>
     <main>
@@ -41,25 +61,26 @@
             <div class="row" id="about">
                 <div class="col">
                     <h1>ICML 2024 Workshop on Accessible and Efficient Foundation Models for Biological Discovery&nbsp;</h1>
-                    <p>This workshop seeks to bring machine learning (ML) and biology experts together to identify interdisciplinary approaches to evolve foundation ML models that could be used under constrained computational resources. While most cutting-edge ML architectures, such as the state-of-the-art protein language models, require large compute clusters and hundreds of GPU hours to train, most biological labs have access to much more modest compute resources, hence limiting the widespread adoption of such models. The workshop will provide a unique opportunity to expose the ICML community to the challenges and opportunities of integrating novel methods for training foundation and frontier artificial intelligence (AI) models into resource-constrained biological research. It will also highlight emerging trends in learning-based foundation models with limited resources and their implications for computational advancements in biological research. We anticipate that our workshop will highlight the pressing need for accessible and efficient foundation models in biology.</p>
-                    <p>AccML.bio will be an in-person workshop at&nbsp;<a href="https://icml.cc/"><strong>ICML 2024</strong></a>&nbsp;in Vienna, Austria on July 27, 2024.</p>
+                    <p>There is a growing gap between machine learning (ML) research on biology-inspired problems and the actual broad-based use of ML in the lab or the clinic. This gap is especially pressing in the context of foundation models and other large ML models. <em>Accessibility&nbsp;</em>and <em>efficiency</em> concerns limit the adoption of these models by biologists and clinicians. Large ML models may require extensive GPU clusters to train, while most biological labs only have access to much more modest computational resources. In other cases, the GPU VRAM may be a constraint. The usability of these models for non-expert users is also a concern, as is the need to iteratively adapt these models based on lab discoveries.</p>
                 </div>
             </div>
             <hr>
             <div class="row" id="cfp">
                 <div class="col">
                     <h1>Call for Papers</h1>
+                    <p>This workshop&nbsp;seeks to bring ML and biomedical researchers together to identify interdisciplinary approaches to design and apply large, complex ML models for biomedical discovery. We invite researchers from academia and industry to submit original papers to bridge the accessibility and efficiency gap between ML research and wet lab use. All accepted papers will be invited to present posters at the workshop, and a few will be invited to give individual spotlight presentations.</p>
                     <p>We are seeking original submissions in topics including, but not limited to:<br></p>
                     <ul style="font-family: Montserrat, sans-serif;font-size: 18px;">
-                        <li>Parameter-, memory-, and compute-efficient foundation models for biological data</li>
+                        <li>Parameter-, memory-, and compute-efficient foundation models for biological data, including&nbsp;<br>model compression and quantization techniques</li>
                         <li>Algorithms for training efficient generative models in biology </li>
                         <li>Efficient fine-tuning and adaptation of biological foundation models</li>
                         <li>Accessible cloud/web-based methods for foundational biological discovery</li>
-                        <li>Foundation model knowledge distillation and transfer learning across biological contexts</li>
-                        <li>Model compression and quantization techniques for biological foundation models</li>
+                        <li>Knowledge distillation and transfer learning across biological contexts</li>
+                        <li>Lab in the loop: iterative approaches to refine ML models based on initial experimental results</li>
                         <li>Uncertainty modeling and hypothesis-driven machine learning in biology</li>
                     </ul>
                     <h2 id="submissions">Submissions</h2>
+                    <p>Submissions must present original research that has not been previously published or is under review elsewhere. Submitted papers should be composed of a main body, which can be up to <strong>four pages</strong> long, followed by an unlimited number of pages for references and appendices, all in a single file. All submissions must be <strong>anonymous</strong> and should not include any information that violates the double-blind review process, including citing authors' prior work or sharing links in a way that can reveal the identities of authors to potential reviewers. Submissions that do not conform to these instructions may be desk-rejected at the Program Committee's discretion to ensure a fair review process for all potential authors. After submission and during the review period, authors are allowed to post their papers as technical reports on bioRxiv, arXiv, or other public forums. For details concerning the format of the papers, please see the&nbsp;<a href="https://www.overleaf.com/project/660ecfe4df41d08da58182b2" target="_blank"><strong>LaTeX style files on Overleaf</strong></a>.</p>
                     <p>Submissions should be made through <a target="_blank" href="https://openreview.net/group?id=ICML.cc/2024/Workshop/AccMLBio"><strong>OpenReview</strong></a>.</p>
                     <h2 id="important-dates">Important Dates</h2>
                     <ul style="font-family: Montserrat, sans-serif;font-size: 18px;">
@@ -68,6 +89,7 @@
                         <li><strong>Acceptance Notification:</strong> June 17, 2024 (Anywhere on Earth)</li>
                         <li><strong>Workshop Date:</strong>&nbsp;July 27, 2024</li>
                     </ul>
+                    <p>AccML.Bio will be an in-person workshop at&nbsp;<a href="https://icml.cc/"><strong>ICML 2024</strong></a>&nbsp;in Vienna, Austria on July 27, 2024.</p>
                 </div>
             </div>
             <hr>
@@ -80,11 +102,11 @@
                         </div>
                     </div>
                     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 row-cols-xl-3" id="speaker-row" style="padding: 30px;">
-                        <div class="col text-center" id="speaker-1"><a href="#"><img class="rounded-circle" src="assets/img/Speakers/bryan-bryson.jpg"></a>
+                        <div class="col text-center" id="speaker-1"><a href="https://brysonlab.mit.edu/" target="_blank"><img class="rounded-circle" src="assets/img/Speakers/bryan-bryson.jpg"></a>
                             <h3 class="name">Bryan Bryson</h3>
                             <p class="title">MIT</p>
                         </div>
-                        <div class="col text-center" id="speaker-2"><a href="https://www.cs.tufts.edu/~cowen/"><img class="rounded-circle" src="assets/img/Speakers/lenore-cowen.jpg"></a>
+                        <div class="col text-center" id="speaker-2"><a href="https://www.cs.tufts.edu/~cowen/" target="_blank"><img class="rounded-circle" src="assets/img/Speakers/lenore-cowen.jpg"></a>
                             <h3 class="name">Lenore Cowen</h3>
                             <p class="title">Tufts University<br></p>
                         </div>
@@ -111,86 +133,20 @@
             <div class="row" id="schedule">
                 <div class="col">
                     <h1>Schedule</h1>
-                    <div class="table-responsive">
-                        <table class="table table-striped">
-                            <caption>All times are CEST.</caption>
-                            <thead style="text-align: left;">
-                                <tr>
-                                    <th style="width: 20%;">Time</th>
-                                    <th>Topic</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>09:00</td>
-                                    <td>Introduction and Opening Remarks</td>
-                                </tr>
-                                <tr>
-                                    <td>09:15</td>
-                                    <td>Invited Talk 1</td>
-                                </tr>
-                                <tr>
-                                    <td>9:45</td>
-                                    <td>Spotlight Session</td>
-                                </tr>
-                                <tr>
-                                    <td>10:00</td>
-                                    <td>Break</td>
-                                </tr>
-                                <tr>
-                                    <td>10:15</td>
-                                    <td>Invited Talk 2</td>
-                                </tr>
-                                <tr>
-                                    <td>10:45</td>
-                                    <td>Poster Session 1</td>
-                                </tr>
-                                <tr>
-                                    <td>11:45</td>
-                                    <td>Invited Talk 3</td>
-                                </tr>
-                                <tr>
-                                    <td>12:15</td>
-                                    <td>Break</td>
-                                </tr>
-                                <tr>
-                                    <td>12:45</td>
-                                    <td>Invited Talk 4</td>
-                                </tr>
-                                <tr>
-                                    <td>13:15</td>
-                                    <td>Invited Talk 5</td>
-                                </tr>
-                                <tr>
-                                    <td>13:45</td>
-                                    <td>Break</td>
-                                </tr>
-                                <tr>
-                                    <td>14:00</td>
-                                    <td>Invited Talk 6</td>
-                                </tr>
-                                <tr>
-                                    <td>14:30</td>
-                                    <td>Poster Session 2</td>
-                                </tr>
-                                <tr>
-                                    <td>15:30</td>
-                                    <td>Invited Talk 7</td>
-                                </tr>
-                                <tr>
-                                    <td>16:00</td>
-                                    <td>End</td>
-                                </tr>
-                                <tr></tr>
-                            </tbody>
-                        </table>
-                    </div>
+                    <p>To be announced.</p>
                 </div>
             </div>
             <hr>
             <div class="row" id="pc">
                 <div class="col">
                     <h1>Program Committee</h1>
+                    <p>To be announced.</p>
+                </div>
+            </div>
+            <hr>
+            <div class="row" id="partners">
+                <div class="col">
+                    <h1>Partners</h1>
                     <p>To be announced.</p>
                 </div>
             </div>
@@ -245,7 +201,7 @@
         </footer>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
 </body>
 
