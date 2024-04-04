@@ -1,13 +1,16 @@
+if (window.innerWidth < 768) {
+	$('[data-bss-disabled-mobile]').removeClass('animated').removeAttr('data-aos data-bss-hover-animate data-bss-parallax-bg data-bss-scroll-zoom');
+}
+
 $(document).ready(function(){
 
 (function(){
 
 	if(!('requestAnimationFrame' in window)) return;
-	if(/Mobile|Android/.test(navigator.userAgent)) return;
 
 	var backgrounds = [];
 
-	$('[data-bs-parallax-bg]').each(function(){
+	$('[data-bss-parallax-bg]').each(function(){
 		var el = $(this);
 		var bg = $('<div>');
 
